@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">шкебеде профессионал</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="log_in">Войти</string>
+</resources>
