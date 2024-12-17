@@ -5,7 +5,25 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/backgroundColor</item>
+
+<!--        <item name="colorPrimaryContainer">#00FFFFFF</item>-->
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+<!--        <item name="bottomNavigationStyle">@style/BottomNavigationBarStyle</item>-->
+
+        <item name="itemActiveIndicatorStyle">@style/itemActiveIndicator</item>
     </style>
 
+    <style name="itemActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/transparent</item>
+<!--        <item name="iconTint">@color/colorPrimary</item>-->
+<!--        <item name="icon">@drawable/ic_launcher_foreground</item>-->
+    </style>
+
+
+    
     <style name="Theme.ProfessionalSkebede" parent="Base.Theme.ProfessionalSkebede" />
 </resources>

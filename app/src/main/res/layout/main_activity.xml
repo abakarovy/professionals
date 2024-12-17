@@ -5,31 +5,29 @@
     style="@style/Base.Theme.ProfessionalSkebede"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F7F9">
+    android:background="#F7F7F9"
+    tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+    <FrameLayout
+        android:id="@+id/mainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
         android:background="@drawable/bottom_bar"
-        android:foregroundTint="#FFFFFF"
         android:scaleX="1.09"
         android:scaleY="1.35"
-        app:backgroundTint="#FFFFFF"
-        app:itemHorizontalTranslationEnabled="false"
-        app:itemIconSize="24dp"
-        app:itemIconTint="@color/black"
-        app:itemTextAppearanceActiveBoldEnabled="false"
+        app:itemActiveIndicatorStyle="@style/itemActiveIndicator"
+        app:itemRippleColor="#FFFFFF"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_bar_menu">
 

@@ -11,6 +11,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 import java.util.regex.Pattern;
 
 public class Login extends AppCompatActivity {
@@ -18,7 +20,7 @@ public class Login extends AppCompatActivity {
     private Pattern emailPattern = Pattern.compile("\\b[A-Za-z0-9._%-]+@[a-z]+\\.[a-z]{2,6}\\b");
 
     EditText emailField;
-    EditText passwordField;
+    TextInputLayout passwordField;
 
     boolean loginValidated = false;
 
@@ -68,16 +70,16 @@ public class Login extends AppCompatActivity {
                             loginValidated = true;
                         }
 
-                        if (loginValidated
-                                && emailField != null
-                                && passwordField != null
-                                && validateEmail(emailField.getText().toString())
-                                && passwordField.length() > 6) {
+//                        if (loginValidated
+//                                && emailField != null
+//                                && passwordField != null
+//                                && validateEmail(emailField.getText().toString())
+//                                && passwordField.getEditText().getText().length() > 6) {
+//
+//                            System.out.println("Success");
 
-                            System.out.println("Success");
-
-//                            setContentView();
-                        }
+                            setContentView(R.layout.main_activity);
+//                        }
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
