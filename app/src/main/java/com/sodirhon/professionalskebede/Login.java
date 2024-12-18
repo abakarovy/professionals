@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -78,7 +79,9 @@ public class Login extends AppCompatActivity {
 //
 //                            System.out.println("Success");
 
-                            setContentView(R.layout.main_activity);
+                        Intent mainActivityIntent = new Intent(Login.this, MainActivity.class);
+                        startActivity(mainActivityIntent);
+//                            setContentView(R.layout.main_activity);
 //                        }
                     }
                 })

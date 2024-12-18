@@ -18,23 +18,22 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     private int notifOption;
     private int profileOption;
 
-    public MainActivity() {
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        BottomNavigationView bottomBar = findViewById(R.id.bottomNavigationView);
+        BottomNavigationView bottomBar = findViewById(R.id.mainBottomBar);
 
         homeOption = R.id.home;
         favOption = R.id.favorites;
         notifOption = R.id.notifications;
         profileOption = R.id.profile;
 
-        bottomBar.setOnItemSelectedListener(this::onNavigationItemSelected);
+        fragmentId = R.id.mainFragment;
+
+        bottomBar.setOnItemSelectedListener(this);
+        bottomBar.setSelectedItemId(homeOption);
     }
 
     @Override
@@ -47,14 +46,33 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
 
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.mainFragment, homeActivity)
+                    .replace(fragmentId, homeActivity)
                     .commit();
+            return true;
         } else if (selectedItemID == favOption) {
+            FavoritesActivity favActivity = new FavoritesActivity();
 
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(fragmentId, favActivity)
+                    .commit();
+            return true;
         } else if (selectedItemID == notifOption) {
+            NotificationActivity notifActivity = new NotificationActivity();
 
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(fragmentId, notifActivity)
+                    .commit();
+            return true;
         } else if (selectedItemID == profileOption) {
-            
+            ProfileActivity profileActivity = new ProfileActivity();
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(fragmentId, profileActivity)
+                    .commit();
+            return true;
         }
 
         return false;

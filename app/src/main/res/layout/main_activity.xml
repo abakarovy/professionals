@@ -8,21 +8,26 @@
     android:background="#F7F7F9"
     tools:context=".MainActivity">
 
+
     <FrameLayout
         android:id="@+id/mainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+        android:id="@+id/mainBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="100sp"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
         android:background="@drawable/bottom_bar"
-        android:scaleX="1.09"
-        android:scaleY="1.35"
+        android:paddingTop="15sp"
         app:itemActiveIndicatorStyle="@style/itemActiveIndicator"
+        app:itemIconSize="27sp"
+        app:itemIconTint="@drawable/main_activity_icon_tint_selector"
         app:itemRippleColor="#FFFFFF"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,21 +40,21 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
         android:clickable="true"
         android:contentDescription="Shop"
         android:foregroundTint="#FFFFFF"
-        android:scaleX="1.3"
-        android:scaleY="1.3"
-        android:tint="#ACACAC"
-        android:translationY="40sp"
+        android:translationY="70sp"
         app:backgroundTint="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toStartOf="@+id/bottomNavigationView"
+        app:fabCustomSize="66sp"
+        app:layout_constraintBottom_toTopOf="@+id/mainBottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/mainBottomBar"
+        app:layout_constraintStart_toStartOf="@+id/mainBottomBar"
+        app:maxImageSize="35sp"
         app:shapeAppearance="@style/Base.Theme.ProfessionalSkebede"
-        app:srcCompat="@drawable/eye_open" />
+        app:srcCompat="@drawable/shoppingbag_icon"
+        app:tint="@color/white" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

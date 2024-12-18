@@ -4,8 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#48B2E7</color>
     <color name="colorSecondary">#F87265</color>
+    <color name="colorDisabled">#2B6B8B</color>
     <color name="colorAccent">#48B2E7</color>
     <color name="backgroundColor">#F7F7F9</color>
+    <color name="colorSubTextDark">#707B81</color>
     <color name="red">#F87265</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>
