@@ -20,8 +20,9 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
 
                 //TODO: CHECK FOR AUTH HERE could also remove the delay ig nigger
-                Intent mainActivity = new Intent(SplashScreen.this, MainActivity.class);
+                Intent mainActivity = new Intent(SplashScreen.this, OnboardingActivity.class);
                 startActivity(mainActivity);
+                finish();
 
                 Log.i("Maga", "App launched");
             }
