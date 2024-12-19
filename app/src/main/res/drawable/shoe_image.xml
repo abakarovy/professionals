@@ -1,128 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Aps>
-	<Group>
-		<Page Width="281" Height="226" PaperTray="0">
-			<Canvas>
-				<Canvas>
-					<Clip>
-						<Path FillMode="Winding">
-							<PathFigure IsClosed="True">
-								<PolyLine LineColor="#FF000000">
-									<Point X="0" Y="226" />
-									<Point X="0" Y="-0.5" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="0" Y="-0.5" />
-									<Point X="281.25" Y="-0.5" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="281.25" Y="-0.5" />
-									<Point X="281.25" Y="226" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="281.25" Y="226" />
-									<Point X="0" Y="226" />
-								</PolyLine>
-							</PathFigure>
-						</Path>
-					</Clip>
-					<Canvas>
-						<Clip>
-							<Path FillMode="Winding">
-								<PathFigure IsClosed="True">
-									<PolyLine LineColor="#FF000000">
-										<Point X="0" Y="-0.5" />
-										<Point X="0" Y="-0.5" />
-									</PolyLine>
-									<PolyLine LineColor="#FF000000">
-										<Point X="0" Y="-0.5" />
-										<Point X="281.25" Y="-0.5" />
-									</PolyLine>
-									<PolyLine LineColor="#FF000000">
-										<Point X="281.25" Y="-0.5" />
-										<Point X="281.25" Y="226" />
-									</PolyLine>
-									<PolyLine LineColor="#FF000000">
-										<Point X="281.25" Y="226" />
-										<Point X="0" Y="226" />
-									</PolyLine>
-								</PathFigure>
-							</Path>
-						</Clip>
-						<Path FillMode="Winding" RenderTransform="1 0 0 -1 0 226">
-							<Brush>
-								<TextureBrush ResourceId="1" Transform="0.9387856 0.344502 -0.344502 0.9387856 -12.981873 -104.61583" WrapMode="Tile" Opacity="1">
-									<ImageArea X="0" Y="0" Width="0" Height="0" />
-								</TextureBrush>
-							</Brush>
-							<PathFigure IsClosed="True">
-								<PolyLine LineColor="#FF000000">
-									<Point X="-121.5" Y="191.10164" />
-									<Point X="-121.5" Y="191.10164" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="-121.5" Y="191.10164" />
-									<Point X="273.35532" Y="335.99994" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="273.35532" Y="335.99994" />
-									<Point X="382.029" Y="39.858643" />
-								</PolyLine>
-								<PolyLine LineColor="#FF000000">
-									<Point X="382.029" Y="39.858643" />
-									<Point X="-12.826332" Y="-105.03967" />
-								</PolyLine>
-							</PathFigure>
-						</Path>
-						<Path FillMode="Alternate" RenderTransform="1 0 0 -1 0 226">
-							<Brush>
-								<SolidBrush Color="#4C101010" />
-							</Brush>
-							<PathFigure IsClosed="False">
-								<Bezier CurveColor="#FF000000">
-									<StartPoint X="32.25" Y="9.375" />
-									<ControlPoint1 X="32.25" Y="11.653168" />
-									<ControlPoint2 X="66.668106" Y="13.5" />
-									<EndPoint X="109.125" Y="13.5" />
-								</Bezier>
-								<PolyLine LineColor="#FF000000">
-									<Point X="109.125" Y="13.5" />
-									<Point X="109.125" Y="13.5" />
-								</PolyLine>
-								<Bezier CurveColor="#FF000000">
-									<StartPoint X="109.125" Y="13.5" />
-									<ControlPoint1 X="151.5819" Y="13.5" />
-									<ControlPoint2 X="186" Y="11.653168" />
-									<EndPoint X="186" Y="9.375" />
-								</Bezier>
-								<PolyLine LineColor="#FF000000">
-									<Point X="186" Y="9.375" />
-									<Point X="186" Y="9.375" />
-								</PolyLine>
-								<Bezier CurveColor="#FF000000">
-									<StartPoint X="186" Y="9.375" />
-									<ControlPoint1 X="186" Y="7.0968323" />
-									<ControlPoint2 X="151.5819" Y="5.25" />
-									<EndPoint X="109.125" Y="5.25" />
-								</Bezier>
-								<PolyLine LineColor="#FF000000">
-									<Point X="109.125" Y="5.25" />
-									<Point X="109.125" Y="5.25" />
-								</PolyLine>
-								<Bezier CurveColor="#FF000000">
-									<StartPoint X="109.125" Y="5.25" />
-									<ControlPoint1 X="66.668106" Y="5.25" />
-									<ControlPoint2 X="32.25" Y="7.0968323" />
-									<EndPoint X="32.25" Y="9.375" />
-								</Bezier>
-							</PathFigure>
-						</Path>
-					</Canvas>
-				</Canvas>
-			</Canvas>
-		</Page>
-	</Group>
-	<Resources>
-		<Resource Id="1">iVBORw0KGgoAAAANSUhEUgAAAaUAAAE7CAYAAAB9vp6dAAAACXBIWXMAAAsSAAALEgHS3X78AAACGklEQVR4nOzBMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4GAAAAP//GsT20gAAAAZJREFUAwAZzwABdoeSkAAAAABJRU5ErkJggg==</Resource>
-	</Resources>
-</Aps>
+﻿<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="560.8dp"
+android:height="420.6dp"
+android:viewportWidth="560.8"
+android:viewportHeight="420.6"
+	>
+<group>
+	<clip-path
+		android:pathData="M0 0H560.803V420.602H0V0Z"
+		/>
+
+</group>
+</vector>

@@ -1,4 +1,4 @@
-package com.sodirhon.professionalskebede;
+package com.sodirhon.professionalskebede.presentation;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

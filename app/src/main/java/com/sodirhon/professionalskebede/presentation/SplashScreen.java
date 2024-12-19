@@ -1,4 +1,4 @@
-package com.sodirhon.professionalskebede;
+package com.sodirhon.professionalskebede.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.os.Looper;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.sodirhon.professionalskebede.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class SplashScreen extends AppCompatActivity {
 
                 Log.i("Maga", "App launched");
             }
-        }, 5000);
+        }, 2200);
     }
 
 }

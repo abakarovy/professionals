@@ -1,4 +1,4 @@
-package com.sodirhon.professionalskebede;
+package com.sodirhon.professionalskebede.presentation;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.sodirhon.professionalskebede.R;
 
 import java.util.regex.Pattern;
 
@@ -71,18 +72,21 @@ public class Login extends AppCompatActivity {
                             loginValidated = true;
                         }
 
-//                        if (loginValidated
-//                                && emailField != null
-//                                && passwordField != null
-//                                && validateEmail(emailField.getText().toString())
-//                                && passwordField.getEditText().getText().length() > 6) {
-//
-//                            System.out.println("Success");
+                        if (loginValidated
+                                && emailField != null
+                                && passwordField != null
+                                && validateEmail(emailField.getText().toString())
+                                && passwordField.getEditText().getText().length() > 6) {
 
-                        Intent mainActivityIntent = new Intent(Login.this, MainActivity.class);
-                        startActivity(mainActivityIntent);
-//                            setContentView(R.layout.main_activity);
-//                        }
+                            System.out.println("Success");
+
+                            Intent mainActivityIntent = new Intent(Login.this, MainActivity.class);
+                            startActivity(mainActivityIntent);
+                        }
+
+                        if (passwordField == null || passwordField.getEditText().getText().length() < 6) {
+                            passwordField.setError("Invalid password");
+                        }
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -98,6 +102,7 @@ public class Login extends AppCompatActivity {
         if (emailPattern.matcher(text).find()) {
             return true;
         }
+        emailField.setError("Invalid Email");
         return false;
     }
 

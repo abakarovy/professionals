@@ -1,15 +1,16 @@
-package com.sodirhon.professionalskebede;
+package com.sodirhon.professionalskebede.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.sodirhon.professionalskebede.R;
 
 public class OnboardingActivity extends AppCompatActivity {
 
@@ -56,7 +57,7 @@ public class OnboardingActivity extends AppCompatActivity {
         if (currFrag < adapter.getItemCount() - 1) {
             viewPager.setCurrentItem(currFrag + 1);
         } else {
-            Intent mainActivity = new Intent(this, MainActivity.class);
+            Intent mainActivity = new Intent(this, Login.class);
             startActivity(mainActivity);
             finish();
         }

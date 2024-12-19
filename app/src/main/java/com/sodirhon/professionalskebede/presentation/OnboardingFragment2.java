@@ -1,4 +1,4 @@
-package com.sodirhon.professionalskebede;
+package com.sodirhon.professionalskebede.presentation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.sodirhon.professionalskebede.R;
 
 public class OnboardingFragment2 extends Fragment {
 

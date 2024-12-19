@@ -1,4 +1,4 @@
-package com.sodirhon.professionalskebede.auth.validation;
+package com.sodirhon.professionalskebede.data.validation;
 
 import android.text.Editable;
 import android.text.TextWatcher;
