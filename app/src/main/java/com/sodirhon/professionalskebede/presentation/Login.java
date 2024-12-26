@@ -72,17 +72,18 @@ public class Login extends AppCompatActivity {
                             loginValidated = true;
                         }
 
-                        if (loginValidated
-                                && emailField != null
-                                && passwordField != null
-                                && validateEmail(emailField.getText().toString())
-                                && passwordField.getEditText().getText().length() > 6) {
-
-                            System.out.println("Success");
+//                        if (loginValidated
+//                                && emailField != null
+//                                && passwordField != null
+//                                && validateEmail(emailField.getText().toString())
+//                                && passwordField.getEditText().getText().length() > 6) {
+//
+//                            System.out.println("Success");
 
                             Intent mainActivityIntent = new Intent(Login.this, MainActivity.class);
+                            mainActivityIntent.putExtra("selectedPage", R.id.home);
                             startActivity(mainActivityIntent);
-                        }
+//                        }
 
                         if (passwordField == null || passwordField.getEditText().getText().length() < 6) {
                             passwordField.setError("Invalid password");

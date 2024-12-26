@@ -1,8 +1,7 @@
-package com.sodirhon.professionalskebede.data.validation;
+package com.sodirhon.professionalskebede.domain.validation;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.TextView;
 
 public abstract class TextValidator implements TextWatcher {

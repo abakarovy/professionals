@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     private int notifOption;
     private int profileOption;
 
+    int selectedPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +34,10 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
 
         fragmentId = R.id.mainFragment;
 
+        selectedPage = getIntent().getIntExtra("selectedPage", R.id.home);
+
         bottomBar.setOnItemSelectedListener(this);
-        bottomBar.setSelectedItemId(homeOption);
+        bottomBar.setSelectedItemId(selectedPage);
     }
 
     @Override
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
         int selectedItemID = item.getItemId();
 
         if (selectedItemID == homeOption) {
-            HomeActivity homeActivity = new HomeActivity();
+            HomeActivity homeActivity = new HomeActivity(this);
 
             getSupportFragmentManager()
                     .beginTransaction()

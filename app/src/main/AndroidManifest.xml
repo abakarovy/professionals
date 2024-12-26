@@ -34,6 +34,11 @@
         <activity
             android:name=".presentation.OnboardingActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".presentation.PopularActivity"
+            android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

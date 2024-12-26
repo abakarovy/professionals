@@ -52,7 +52,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/popularBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
@@ -84,7 +84,7 @@
             app:layout_constraintVertical_bias="0.511" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/favorites_favBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/circular"
