@@ -60,7 +60,7 @@ public class PopularActivity extends AppCompatActivity {
         }).start();
 
 
-        ImageButton favBtn = findViewById(R.id.favorites_favBtn);
+        ImageButton favBtn = findViewById(R.id.favorites_cartBtn);
         favBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

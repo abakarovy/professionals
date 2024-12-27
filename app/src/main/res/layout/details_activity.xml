@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:backgroundTint="@color/backgroundColor">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -20,7 +20,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Популярное"
+            android:text="Sneaker Shop"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +34,15 @@
             android:layout_height="wrap_content"
             android:background="@drawable/circular"
             android:backgroundTint="@color/white"
+            android:maxHeight="0dp"
+            android:minHeight="0dp"
             android:padding="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.711"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fav_icon"
+            app:srcCompat="@drawable/shoppingbag_icon"
             app:tint="@color/black" />
 
         <ImageButton
@@ -62,40 +64,5 @@
             app:tint="@color/black" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10sp"
-        android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.gridlayout.widget.GridLayout
-                android:id="@+id/itemsGrid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:visibility="invisible"
-                app:columnCount="2"
-                app:rowCount="200" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ProgressBar
-        android:id="@+id/popular_progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="151sp"
-        android:layout_height="151sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

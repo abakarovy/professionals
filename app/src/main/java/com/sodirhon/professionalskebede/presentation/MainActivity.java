@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
                     .commit();
             return true;
         } else if (selectedItemID == favOption) {
-            FavoritesActivity favActivity = new FavoritesActivity();
+            FavoritesActivity favActivity = new FavoritesActivity(this);
 
             getSupportFragmentManager()
                     .beginTransaction()

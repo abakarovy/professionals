@@ -8,6 +8,16 @@ import java.util.concurrent.CompletableFuture;
 
 public class ExampleData {
 
+    private static List<ShoeItem> favShoes = new ArrayList<ShoeItem>();
+
+    private static List<ShoeItem> allShoes = new ArrayList<ShoeItem>() {{
+        for (int i = 0; i < 10; i++) {
+            add(new ShoeItem(i,false, "NIGGER", 200112030));
+        }
+    }};
+
+    private static List<ShoeItem> cart = new ArrayList<ShoeItem>();
+
     public static List<ShoeItem> getShoes() {
         CompletableFuture<List<ShoeItem>> future = CompletableFuture.supplyAsync(() -> {
             try {
@@ -16,14 +26,7 @@ public class ExampleData {
                 throw new RuntimeException(e.toString());
             }
 
-            List<ShoeItem> shoeItems = new ArrayList<ShoeItem>();
-
-            for (int i = 0; i < 7; i++) {
-                ShoeItem shoeItem = new ShoeItem(true,"Nike Air Max", 777);
-
-                shoeItems.add(shoeItem);
-            }
-            return shoeItems;
+            return allShoes;
         });
         try {
             return future.get();
@@ -31,4 +34,37 @@ public class ExampleData {
             throw new RuntimeException(e.toString());
         }
     }
+
+    public static void addShoeToFav(ShoeItem shoeItem) {
+        shoeItem.favorited = true;
+        favShoes.add(shoeItem);
+    }
+
+    public static void removeShoeFromFav(ShoeItem shoeItem) {
+        for (ShoeItem shoeItem1:favShoes) {
+            if (shoeItem.id == shoeItem1.id) {
+                shoeItem1.favorited = false;
+                favShoes.remove(shoeItem.id);
+            }
+        }
+    }
+
+    public static List<ShoeItem> getFavShoes() {
+        CompletableFuture<List<ShoeItem>> completableFuture = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+            return favShoes;
+        });
+
+        try {
+            return completableFuture.get();
+        } catch (Exception e) {
+            throw new RuntimeException();
+        }
+    }
+
 }
