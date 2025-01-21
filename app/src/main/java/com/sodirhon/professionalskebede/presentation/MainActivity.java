@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.sodirhon.professionalskebede.R;
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     private int profileOption;
 
     int selectedPage;
+
+    FloatingActionButton cartButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
